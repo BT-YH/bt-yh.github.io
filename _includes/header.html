@@ -1,0 +1,86 @@
+<!-- Header -->
+<div id="colorChanging" class="p-5 text-center bg-body-tertiary">
+  <div class="container py-5 bg-transparent">
+    {% if page.title == "Home" %}
+    <p class="display-1 text-body-emphasis">
+      <span style="font-size: inherit; font-weight: inherit; font-style: italic"
+        >Welcome to</span
+      >
+      <span
+        class="textColorChanging"
+        id="display"
+        style="font-size: inherit; font-weight: bolder"
+        >Barry Tang</span
+      ><span
+        style="font-size: inherit; font-weight: inherit; font-style: italic"
+        >.</span
+      >
+    </p>
+    <p class="col-lg-8 mx-auto lead">
+      my <i id="colorChanging-code"><code>Internet</code></i> <em>retreat</em>.
+    </p>
+    {% elsif page.title == "About" %}
+    <p class="display-1 text-body-emphasis">
+      <span
+        class="textColorChanging"
+        id="display"
+        style="font-size: inherit; font-weight: bolder"
+        >About</span
+      >
+    </p>
+    <p class="col-lg-8 mx-auto lead">
+      a little about <i id="colorChanging-code"><code>me</code></i
+      >.
+    </p>
+    {% elsif page.title == "Blog" %}
+    <p class="display-1 text-body-emphasis">
+      <span
+        class="textColorChanging"
+        id="display"
+        style="font-size: inherit; font-weight: bolder"
+        >Blog</span
+      >
+    </p>
+    <p class="col-lg-8 mx-auto lead">
+      back to the <i id="colorChanging-code"><code>future</code></i
+      >.
+    </p>
+    {% elsif page.title == "Archive" %}
+    <p class="display-1 text-body-emphasis">
+      <span
+        class="textColorChanging"
+        id="display"
+        style="font-size: inherit; font-weight: bolder"
+        >Archive</span
+      >
+    </p>
+    <p class="col-lg-8 mx-auto lead">
+      <em>traveling</em> in the sea of
+      <i id="colorChanging-code"><code>memories</code></i
+      >.
+    </p>
+    {% else %}
+    <p class="display-1 text-body-emphasis">
+      <span
+        class="textColorChanging"
+        id="display"
+        style="font-size: inherit; font-weight: bolder"
+        >{{ page.title }}</span
+      >
+    </p>
+    <p class="col-lg-8 mx-auto lead">
+      Published on
+      <i id="colorChanging-code"
+        ><code
+          ><time datetime="{{ page.date }}"
+            >{{ page.date | date: "%B %d, %Y" }}</time
+          >
+          {% if page.author %} by {{ page.author }} {% endif %}
+        </code></i
+      >
+    </p>
+    {% endif %}
+  </div>
+</div>
+
+<hr />

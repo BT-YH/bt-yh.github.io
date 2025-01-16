@@ -1,7 +1,96 @@
-.current {
-  color: green;
+:root {
+  --theme-color: rgb(100, 100, 100);
+  --opposite-color: rgb(67, 166, 205);
+  scroll-behavior: smooth;
+}
+
+article {
+  padding: 3rem 5rem;
+}
+
+hr {
+  margin: 4rem auto !important;
+  width: 66%;
+}
+
+.ani {
+  outline: 0px !important;
+  margin-bottom: 0;
+}
+.ani :hover {
+  color: lightgrey;
+  border-width: 2px;
+  border-color: black;
+}
+
+#ani-group {
+  top: 2.5rem; 
+  z-index: 100;
+  transform: translate(-72px, 0px);
+  transition: ease 2s;
+  transition-delay: 3s;
+}
+
+#ani-group:hover {
+  transform: translate(0px, 0px);
+  transition: 1s;
+}
+
+.btn-bd-primary {
+  --bs-btn-bg: var(--theme-color) !important;
+  // --bs-btn-font-weight: 600;
+  --bs-btn-hover-bg: var(--theme-color) !important;
+  --bs-btn-active-bg: var(--theme-color) !important;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+code {
+  color: var(--opposite-color) !important;
+}
+
+p {
+  font-size: large;
 }
 
 h2.blog {
   display: inline-block;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(61, 61, 61);
+  border-radius: 0;
+}
+
+a.nav-item{
+  flex: 1;
+  text-decoration: none;
+  text-align: center; /* Center-align text inside the nav-item */
+  color: white; /* White text */
+  display: block; /* Makes the <a> take up full width and height */
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.5s ease;
+}
+
+a.nav-item:hover {
+  background-color: var(--theme-color); /* Highlight on hover */
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none !important; 
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 1rem;
 }
