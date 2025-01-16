@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../_sass/main.scss"],"names":[],"mappings":"AAAA;EACE;;;AAGF;EACE","sourcesContent":[".current {\n  color: green;\n}\n\nh2.blog {\n  display: inline-block;\n}\n"],"file":"styles.css"}
