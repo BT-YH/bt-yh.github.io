@@ -1,16 +1,36 @@
 :root {
-  --theme-color: rgb(100, 100, 100);
+  --theme-color: rgb(200, 200, 200);
   --opposite-color: rgb(67, 166, 205);
   scroll-behavior: smooth;
 }
 
-article {
-  padding: 3rem 5rem;
+a {
+  text-decoration: none !important;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-hr {
-  margin: 4rem auto !important;
+article {
+  padding: 1rem 5rem 3rem 5rem;
+}
+
+code {
+  color: var(--opposite-color) !important;
+}
+
+p {
+  font-size: large;
+}
+
+hr.header {
+  margin: 3rem auto !important;
   width: 66%;
+}
+
+hr.blog-list {
+  width: 80%;
+  margin: 1rem 1rem 1rem 0 !important;
 }
 
 .ani {
@@ -51,14 +71,6 @@ hr {
   display: block !important;
 }
 
-code {
-  color: var(--opposite-color) !important;
-}
-
-p {
-  font-size: large;
-}
-
 h2.blog {
   display: inline-block;
 }
@@ -87,11 +99,19 @@ a.nav-item:hover {
   border-radius: 5px;
 }
 
-a {
-  text-decoration: none !important;
-  display: inline-block;
+.main-container {
+  box-sizing: border-box;
+  padding: 2% 6%;
+}
+
+p.smaller-font {
+  font-size: small !important;
+}
+
+li.blog-list:hover {
+  background-color: var(--theme-color); /* Highlight on hover */
   border-radius: 5px;
-  font-size: 1rem;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 /*# sourceMappingURL=styles.css.map */
