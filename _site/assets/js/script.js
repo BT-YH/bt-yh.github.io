@@ -38,6 +38,56 @@ function changeColor() {
 
   document.documentElement.style.setProperty("--theme-color", color0);
   document.documentElement.style.setProperty("--opposite-color", color1);
+  sessionStorage.setItem("themeColor", color0);
+  sessionStorage.setItem("oppositeColor", color1);
+  sessionStorage.setItem("textColor", textColor);
+}
+
+// Function to apply the saved color on page load
+function applySavedColor() {
+  const themeColor = sessionStorage.getItem("themeColor");
+  const oppositeColor = sessionStorage.getItem("oppositeColor");
+  const textColor = sessionStorage.getItem("textColor");
+
+  document.documentElement.style.setProperty("--theme-color", themeColor);
+  document.documentElement.style.setProperty("--opposite-color", oppositeColor);
+
+  if (themeColor) {
+    document
+      .getElementById("colorChanging")
+      .style.setProperty("background-color", themeColor, "important");
+  }
+  if (oppositeColor) {
+    document
+      .getElementById("colorChanging-code")
+      .style.setProperty("color", oppositeColor, "important");
+  }
+  if (textColor) {
+    var elements = document.getElementsByClassName("textColorChanging");
+    elements[0].style.color = textColor;
+  }
+}
+
+function applySavedFont() {
+  const serifFont = sessionStorage.getItem("serifOption");
+  const sansSerifFont = sessionStorage.getItem("sansSerifOption");
+  const displayFont = sessionStorage.getItem("displayOption");
+
+  if (serifFont) {
+    var serifElements = document.getElementsByClassName("serif");
+    for (var i = 0; i < serifElements.length; i++) {
+      serifElements[i].style.fontFamily = serifFont;
+    }
+  }
+  if (sansSerifFont) {
+    var sansSerifElements = document.getElementsByClassName("sansSerif");
+    for (var i = 0; i < sansSerifElements.length; i++) {
+      sansSerifElements[i].style.fontFamily = sansSerifFont;
+    }
+  }
+  if (displayFont) {
+    document.getElementById("display").style.fontFamily = displayFont;
+  }
 }
 
 function getContrastColor(red, green, blue) {
@@ -85,7 +135,8 @@ function changeFont() {
     "Crete Round",
   ];
   var serifElements = document.getElementsByClassName("serif");
-  var serifFont = serifOptions[Math.floor(Math.random() * serifOptions.length)];
+  const serifFont =
+    serifOptions[Math.floor(Math.random() * serifOptions.length)];
   for (var i = 0; i < serifElements.length; i++) {
     serifElements[i].style.fontFamily = serifFont;
   }
@@ -114,7 +165,7 @@ function changeFont() {
     "Ubuntu",
   ];
   var sansSerifElements = document.getElementsByClassName("sansSerif");
-  var sansSerifFont =
+  const sansSerifFont =
     sansSerifOptions[Math.floor(Math.random() * sansSerifOptions.length)];
   for (var i = 0; i < sansSerifElements.length; i++) {
     sansSerifElements[i].style.fontFamily = sansSerifFont;
@@ -143,15 +194,11 @@ function changeFont() {
     "Special Elite",
     "Titan One",
   ];
-  document.getElementById("display").style.fontFamily =
+  const displayFont =
     displayOptions[Math.floor(Math.random() * displayOptions.length)];
-}
+  document.getElementById("display").style.fontFamily = displayFont;
 
-const PAGES = ["about", "projects", "writing", "other"];
-
-function change_page(th) {
-  for (let page of PAGES) {
-    let row = document.getElementById("cont-" + page);
-    row.style.display = page == th ? "flex" : "none";
-  }
+  sessionStorage.setItem("sansSerifOption", sansSerifFont);
+  sessionStorage.setItem("serifOption", serifFont);
+  sessionStorage.setItem("displayOption", displayFont);
 }
