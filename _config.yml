@@ -2,7 +2,13 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-spaceship
+  # - jekyll-spaceship
+
+markdown: kramdown
+kramdown: 
+  math_engine: mathjax
+  parse_block_html: true  # Ensure MathJax scripts inside HTML work
+mathjax: true
 
 defaults:
   - scope:
@@ -10,10 +16,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      usemathjax: true
   - scope:
       path: ""
     values:
       layout: "default"
-
-markdown: kramdown
-mathjax: true
