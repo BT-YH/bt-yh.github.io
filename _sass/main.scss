@@ -102,6 +102,10 @@ a.nav-item:hover {
 
 .main-container {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 70%;
+  max-width:1500px;
   padding: 2% 6%; 
 }
 

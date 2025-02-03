@@ -2,6 +2,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-spaceship
 
 defaults:
   - scope:
@@ -13,3 +14,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+markdown: kramdown
+mathjax: true
