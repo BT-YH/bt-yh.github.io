@@ -1,17 +1,22 @@
 ---
-layout: main
+layout: default
 ---
 {% include mathjax.html %}
-<article>
-  <section>{{ content }}</section>
-  <footer>
-    {% if page.tags and page.tags.size > 0 %}
-    <p>
-      <strong>Tags:</strong>
-      {% for tag in page.tags %}
-      <a href="/archive#{{ tag | slugify }}" class="tag">{{ tag }}</a>
-      {% if forloop.last == false %}, {% endif %} {% endfor %}
-    </p>
-    {% endif %}
-  </footer>
-</article>
+<div style="display: flex; width: 100%; justify-content: center; flex-direction: row;">
+  <div class="main-container">
+    <article>
+      <section>{{ content }}</section>
+      <footer>
+        {% if page.tags and page.tags.size > 0 %}
+        <p>
+          <strong>Tags:</strong>
+          {% for tag in page.tags %}
+          <a href="/archive#{{ tag | slugify }}" class="tag">{{ tag }}</a>
+          {% if forloop.last == false %}, {% endif %} {% endfor %}
+        </p>
+        {% endif %}
+      </footer>
+    </article>
+
+  </div>
+</div>
