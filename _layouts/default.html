@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }}</title>
+    <link rel="icon" type="image/svg+sml" href="/assets/img/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script src="/assets/js/script.js"></script>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }}</title>
-  <link rel="icon" type="image/svg+sml" href="/assets/img/favicon.svg">
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <script src="/assets/js/script.js"></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- fonts-->
+    <script
+      src="https://kit.fontawesome.com/c13a8d5cc1.js"
+      crossorigin="anonymous"></script>
 
-  <!-- fonts-->
-  <script src="https://kit.fontawesome.com/c13a8d5cc1.js" crossorigin="anonymous"></script>
+    <!-- p5 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    {% feed_meta %} {% seo %}
 
-  <!-- p5 js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
-  {% feed_meta %} {% seo %}
+    <!-- Prevent caching -->
+    <meta
+      http-equiv="cache-control"
+      content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
 
-  <!-- Prevent caching -->
-  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="pragma" content="no-cache" />
-  <meta http-equiv="expires" content="0" />
+    <!-- Fonts for switcher -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Serif -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Bitter|Bree+Serif|Crete+Round|Crimson+Text|Domine|EB+Garamond|Grenze|Libre+Baskerville|Libre+Caslon+Display|Libre+Caslon+Text|Lora|Merriweather|Noto+Serif|PT+Serif|Playfair+Display|Roboto+Slab|Slabo+27px|Source+Serif+Pro|Vollkorn&display=swap"
+      rel="stylesheet" />
+    <!-- Display -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Baloo+Bhaina|Bangers|Bowlby+One+SC|Bungee|Cabin+Sketch|Emilys+Candy|Faster+One|Lobster|Monoton|Mountains+of+Christmas|Nixie+One|Press+Start+2P|Righteous|Rye|Saira+Stencil+One|Shojumaru|Special+Elite|Titan+One&display=swap"
+      rel="stylesheet" />
+    <!-- Sans-serif -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Blinker|Lato|Lexend+Exa|Montserrat|Muli|Noto+Sans|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|PT+Sans|Poppins|Raleway|Red+Hat+Display|Red+Hat+Text|Roboto|Roboto+Condensed|Source+Sans+Pro|Titillium+Web|Ubuntu&display=swap"
+      rel="stylesheet" />
 
-  <!-- Fonts for switcher -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Serif -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Arvo|Bitter|Bree+Serif|Crete+Round|Crimson+Text|Domine|EB+Garamond|Grenze|Libre+Baskerville|Libre+Caslon+Display|Libre+Caslon+Text|Lora|Merriweather|Noto+Serif|PT+Serif|Playfair+Display|Roboto+Slab|Slabo+27px|Source+Serif+Pro|Vollkorn&display=swap"
-    rel="stylesheet" />
-  <!-- Display -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Baloo+Bhaina|Bangers|Bowlby+One+SC|Bungee|Cabin+Sketch|Emilys+Candy|Faster+One|Lobster|Monoton|Mountains+of+Christmas|Nixie+One|Press+Start+2P|Righteous|Rye|Saira+Stencil+One|Shojumaru|Special+Elite|Titan+One&display=swap"
-    rel="stylesheet" />
-  <!-- Sans-serif -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Blinker|Lato|Lexend+Exa|Montserrat|Muli|Noto+Sans|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|PT+Sans|Poppins|Raleway|Red+Hat+Display|Red+Hat+Text|Roboto|Roboto+Condensed|Source+Sans+Pro|Titillium+Web|Ubuntu&display=swap"
-    rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap"
+      rel="stylesheet" />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet" />
+  <body>
+    {% include navigation.html %} {% include header.html %} {% include
+    floating_btns.html %} {{ content }} {% include footer.html %}
+  </body>
+  <script>
+    applySavedColor();
+    applySavedFont();
+  </script>
+  <script src="/assets/js/color-mode.js"></script>
+  <script src="/assets/js/signature-code.js"></script>
 
-</head>
-
-<body>
-  {% include navigation.html %} {% include header.html %} {% include
-  theme_button.html %} {% include floating_btns.html %} {{ content }}
-  {% include footer.html %}
-</body>
-<script>
-  applySavedColor();
-  applySavedFont();
-</script>
-<script src="/assets/js/color-mode.js"></script>
-<script src="/assets/js/signature-code.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </html>
