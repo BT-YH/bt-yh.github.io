@@ -6,7 +6,7 @@ layout: main
 
 # _Why Starting a Blog_?
 ---
-My motivation for starting this blog, in part, comes from this Confucous quote:  
+My motivation for starting this blog, in part, comes from this Confucious quote:  
 > 温故而知新，可以为师矣。
 
 Here is how I translated it:
