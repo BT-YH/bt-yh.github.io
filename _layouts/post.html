@@ -1,9 +1,16 @@
 ---
 layout: default
 ---
+
 {% include mathjax.html %}
-<div style="display: flex; width: 100%; justify-content: center; flex-direction: row;">
-  <div class="main-container" style="padding: 2%;">
+<div
+  style="
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  ">
+  <div class="main-container">
     <article>
       <section>{{ content }}</section>
       <footer>
@@ -17,6 +24,5 @@ layout: default
         {% endif %}
       </footer>
     </article>
-
   </div>
 </div>

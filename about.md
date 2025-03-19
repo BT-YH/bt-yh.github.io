@@ -4,7 +4,7 @@ layout: main
 ---
 <!--- Date: Feb 8, 2025 --->
 
-# _Why Starting a Blog_?
+# _Why Starting a Blog?_
 ---
 My motivation for starting this blog, in part, comes from this Confucious quote:  
 > 温故而知新，可以为师矣。
