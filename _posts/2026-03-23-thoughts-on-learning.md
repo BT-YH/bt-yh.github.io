@@ -3,7 +3,7 @@ layout: post
 tags: physics learning
 ---
 
-How should learning be optimized?
+Troubled thoughts of a beginning graduate students.
 
 
 I am currently in my second semester of physics PhD program at Notre Dame, and it has not been what I expected. It has occurred to me that my undergraduate education was discouragingly insufficient. And the fault is the way I had approached learning physics. 
@@ -17,6 +17,8 @@ However, learning is iterative. So the foundation is gradually improved. But ite
 
 How do I get out of this? Am I seeking self-approval? Am I seeking others' approval? Am I really cut out for this? Am I making physics my idol? Will I fail?
 
-I don't know if I am making physics my idol. I still think that mine is a naive and simple drive to learn more about this world, and to apply what I've learned to discover all the incredible things our mother nature or heavenly father has presented to us. What I am sure of is that **I dread failure**. Just the idea of failing makes me squirm in my chair as I'm typing this. Why do I dread failure so much? And what counts as failure? Not meeting the 3.0 GPA requirement. Okay that's a fair point. 
+I don't know if I am making physics my idol. I still think that mine is a naive and simple drive to learn more about this world, and to apply what I've learned to discover all the incredible things our mother nature or heavenly father has presented to us. What I am sure of is that **I dread failure**. Just the idea of failing makes me squirm in my chair as I'm typing this. Why do I dread failure so much? And what counts as failure? Not meeting the 3.0 GPA requirement. Okay that's a fair point. Getting a good grade isn't hard, it's easy to cheat the system: looking up solutions to homework problems, cramming for exams the night before... I hate doing these things. I might be prideful, but I think it's for the sake of my learning. Can I really build my house on sand and slowly swap the sand out for rocks? Probably. Is it really worth risking probation to give myself the ideal learning? Probably not.
 
+There has to be a middle ground. Like my adivsor told me, I have to pick and choose. Choose what is the utmost important. Maintain my GPA above 3.0. 
 
+I have to pick and choose. I can't doing everything perfectly. I have to mix some sand in the rocks.
