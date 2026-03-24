@@ -3,7 +3,7 @@ layout: post
 tags: physics learning
 ---
 
-Troubled thoughts of a beginning graduate students.
+Troubled thoughts of a beginning graduate student.
 
 
 I am currently in my second semester of physics PhD program at Notre Dame, and it has not been what I expected. It has occurred to me that my undergraduate education was discouragingly insufficient. And the fault is the way I had approached learning physics. 
