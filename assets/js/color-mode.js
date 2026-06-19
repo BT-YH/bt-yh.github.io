@@ -34,7 +34,7 @@
         "data-bs-theme",
         window.matchMedia("(prefers-color-scheme: dark)").matches
           ? "dark"
-          : "light"
+          : "light",
       );
     } else {
       document.documentElement.setAttribute("data-bs-theme", theme);
@@ -53,7 +53,7 @@
     const themeSwitcherText = document.querySelector("#bd-theme-text");
     const activeThemeIcon = document.querySelector(".theme-icon-active use");
     const btnToActive = document.querySelector(
-      `[data-bs-theme-value="${theme}"]`
+      `[data-bs-theme-value="${theme}"]`,
     );
     const svgOfActiveBtn = btnToActive
       .querySelector("svg use")
@@ -74,15 +74,6 @@
       themeSwitcher.focus();
     }
   };
-
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", () => {
-      const storedTheme = getStoredTheme();
-      if (storedTheme !== "light" && storedTheme !== "dark") {
-        setTheme(getPreferredTheme());
-      }
-    });
 
   window.addEventListener("DOMContentLoaded", () => {
     showActiveTheme(getPreferredTheme());

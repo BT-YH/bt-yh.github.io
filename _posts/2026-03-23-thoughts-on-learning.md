@@ -21,4 +21,4 @@ I don't know if I am making physics my idol. I still think that mine is a naive 
 
 There has to be a middle ground. Like my adivsor told me, I have to pick and choose. Choose what is the utmost important. Maintain my GPA above 3.0. 
 
-I have to pick and choose. I can't doing everything perfectly. I have to mix some sand in the rocks.
+I have to pick and choose. I can't do everything perfectly. I have to mix some sand in the rocks.
