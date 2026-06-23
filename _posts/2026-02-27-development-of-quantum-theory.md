@@ -4,7 +4,7 @@ tags: physics quantum_mechanics history
 ---
 
 
-This is a summary of the [J. Robert Oppenheimer Memorial Prize Acceptance Speech by Paul A. M. Dirac.](https://www.goodreads.com/book/show/674804.Development_of_Quantum_Theory)
+*This is a summary of the [J. Robert Oppenheimer Memorial Prize Acceptance Speech by Paul A. M. Dirac.](https://www.goodreads.com/book/show/674804.Development_of_Quantum_Theory)*
 
 <br>
 

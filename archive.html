@@ -3,5 +3,9 @@ title: Archive
 layout: main
 ---
 
-{% assign all_tags = site.tags | sort %} {% for tag in site.tags %} {% include
-archive_list.html %} {% endfor %}
+<div class="archive-page">
+  {% assign all_tags = site.tags | sort %}
+  {% for tag in site.tags %}
+    {% include archive_list.html %}
+  {% endfor %}
+</div>

@@ -113,6 +113,27 @@ a.nav-item:hover {
   padding: 2% 6%; 
 }
 
+.main-container:has(.archive-page) {
+  width: 100%;
+}
+
+.archive-page {
+  align-self: stretch;
+  text-align: left;
+  width: 100%;
+}
+
+.archive-list {
+  box-sizing: border-box;
+  margin-left: 0;
+  padding-left: 1.25rem;
+  width: 100%;
+}
+
+.archive-list .blog-list {
+  width: 100%;
+}
+
 .blog-excerpt p {
   font-size: 0.8em !important;
 }
